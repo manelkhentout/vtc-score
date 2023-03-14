@@ -36,6 +36,7 @@ CLASSES = {"babytrain": {'classes': ["MAL", "FEM", "CHI", "KCHI"],
 
 def parse_args(argv):
     parser = argparse.ArgumentParser(description='Evaluate VTC with fscore')
+    #Todo: modifiy the pathand add the protocole args "-p"
     parser.add_argument("-p", "--protocol", type=str,
                         default="X.SpeakerDiarization.BBT2",
                         help="Pyannote database")
